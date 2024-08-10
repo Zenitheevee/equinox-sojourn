@@ -376,9 +376,9 @@
 		to_chat(usr, SPAN_NOTICE("The bullet fabricator is in the process of working."))
 		return
 	var/S = 0
-	for(var/obj/item/stack/I in contents)
+	for(var/obj/item/stack/material/I in contents) //Equinox Edit. Original:	for(var/obj/item/stack/I in contents)
 		S += 5
-		points += I.amount * I.price_tag * 5
+		points += I.amount * I.material_points //Equinox edit. Original:	points += I.amount * I.price_tag * 5
 		qdel(I)
 	if(S)
 		processing = TRUE
