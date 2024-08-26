@@ -90,7 +90,7 @@
 	\tShift+x = wield
 	\tr = throw
 	\tt = say
-	\tm = emote (or 5)
+	\t5 = emote
 	\tx = swap-hand
 	\tz = activate held object (or y)
 	\tl = looc-verb
